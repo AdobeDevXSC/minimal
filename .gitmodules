@@ -1,3 +1,4 @@
 [submodule "aem-dispatcher"]
 	path = aem-dispatcher
 	url = https://github.com/ez-aem-helpers/aem-dispatcher.git
+	branch = main
