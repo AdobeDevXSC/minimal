@@ -18,3 +18,9 @@ git add submodule <git repository path>
 ```
 
 you also should add the new repository to the `<modules>` section in the root `pom.xml` file. 
+
+### Update Submodules to latest version
+
+```
+git submodule update --remote
+```
