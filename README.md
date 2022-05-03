@@ -14,7 +14,7 @@ Find the out of the box repos at https://github.com/ez-aem-helpers
 
 ### Add a New Repo
 ```
-git add submodule <git repository path>
+git submodule add <git repository path>
 ```
 
 you also should add the new repository to the `<modules>` section in the root `pom.xml` file. 
