@@ -10,7 +10,7 @@ This repository uses git submodules to include other git repositories into a lar
 
 ### Discover Repos
 
-Find the out of the box repos at https://github.com/ez-aem-helpers
+Find the out of the box repos at https://github.com/AdobeAEMXSC
 
 ### Add a New Repo
 ```
