@@ -20,6 +20,20 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
 4.	Click `…`, the click `Check Branches / Create Project`
 5.	Click `Create` using the default settings
 
+### Add Minimal Repo into New Repo
+
+1.	Click `Repositories` from Cloud Manager menu
+2.	Click `…` associated with `aemcs-minimal`, the click `Copy Repository URL`
+3.	Open `Terminal`, type `git clone [repository URL]`
+    * Example `git clone https://git.cloudmanager.adobe.com/myname/aemcs-minimal/`
+4.	Switch folder, enter `cd aemcs-minimal`
+5.	Remove all files and directories, type `rm -r *`, type `y` and pressing `enter` to confirm
+6.	Remove .gitignore, type `rm .gitignore`
+7.	Commit all changes to git, type `git commit -a -m "clean"`
+8.	Set minimal repo as remote target, type `git remote add github-minimal https://github.com/AdobeAEMXSC/minimal.git`
+9.	Pull minimal repo into current repo, type `git pull --allow-unrelated-histories --no-edit github-minimal main`
+10.	push all commits back to New Repo, type, `git push`
+
 ### Add a New Submodule to Repo
 ```
 git submodule add <git repository path>
