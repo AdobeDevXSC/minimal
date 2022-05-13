@@ -12,7 +12,15 @@ This repository uses git submodules to include other git repositories into a lar
 
 Find the out of the box repos at https://github.com/AdobeAEMXSC
 
-### Add a New Repo
+### Add a New Repo to AEM Program in Cloud Manager
+
+1.	Click `Repositories` from Cloud Manager menu
+2.	Click `Add Repository` from Repositories screen
+3.	Enter `aemcs-minimal` as repository name, click `Save`
+4.	Click `…`, the click `Check Branches / Create Project`
+5.	Click `Create` using the default settings
+
+### Add a New Submodule to Repo
 ```
 git submodule add <git repository path>
 ```
