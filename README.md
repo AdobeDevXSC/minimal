@@ -30,9 +30,10 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
 5.	Remove all files and directories, type `rm -r *`, type `y` and pressing `enter` to confirm
 6.	Remove .gitignore, type `rm .gitignore`
 7.	Commit all changes to git, type `git commit -a -m "clean"`
-8.	Set minimal repo as remote target, type `git remote add github-minimal https://github.com/AdobeAEMXSC/minimal.git`
-9.	Pull minimal repo into current repo, type `git pull --allow-unrelated-histories --no-edit github-minimal main`
-10.	push all commits back to New Repo, type, `git push`
+8.	Sync commit back to repository, type `git push`
+9.	Set minimal repo as remote target, type `git remote add github-minimal https://github.com/AdobeAEMXSC/minimal.git`
+10.	Pull minimal repo into current repo, type `git pull --allow-unrelated-histories --no-edit github-minimal main`
+11.	push all commits back to New Repo, type, `git push`
 
 ### Add a New Submodule to Repo
 ```
