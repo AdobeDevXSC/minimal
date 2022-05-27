@@ -20,7 +20,7 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
 4.	Click `…`, the click `Check Branches / Create Project`
 5.	Click `Create` using the default settings
 
-### Add Minimal Repo into New Repo
+### Add Minimal Repo into New or Existing Repo
 
 1.	Click `Repositories` from Cloud Manager menu
 2.	Click `…` associated with `aemcs-minimal`, the click `Copy Repository URL`
