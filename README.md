@@ -66,7 +66,7 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
       ```
 11. Update submodules, type
       ```
-      submodule update --remote
+      git submodule update --remote
       ```
 12. Commit all new files to git, type
       ```
