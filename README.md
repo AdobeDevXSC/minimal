@@ -24,16 +24,62 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
 
 1.	Click `Repositories` from Cloud Manager menu
 2.	Click `…` associated with `aemcs-minimal`, the click `Copy Repository URL`
-3.	Open `Terminal`, type `git clone [repository URL]`
-    * Example `git clone https://git.cloudmanager.adobe.com/myname/aemcs-minimal/`
-4.	Switch folder, enter `cd aemcs-minimal`
-5.	Remove all files and directories, type `rm -r *`, type `y` and pressing `enter` to confirm
-6.	Remove .gitignore, type `rm .gitignore`
-7.	Commit all changes to git, type `git commit -a -m "clean"`
-8.	Sync commit back to repository, type `git push`
-9.	Set minimal repo as remote target, type `git remote add github-minimal https://github.com/AdobeAEMXSC/minimal.git`
-10.	Pull minimal repo into current repo, type `git pull --allow-unrelated-histories --no-edit github-minimal main`
-11.	push all commits back to New Repo, type, `git push`
+3.	Open `Terminal`, type
+      ```
+      git clone [repository URL]
+      ```
+      * Example `git clone https://git.cloudmanager.adobe.com/myname/aemcs-minimal/`
+4.	Switch folder, type
+      ```
+      cd aemcs-minimal
+      ```
+6.	Remove all files and directories, type
+      ```
+      git rm -rf .
+      ```
+8. Clean all unstaged files, type
+   ```
+   git clean -fxd
+   ```
+10. Commit all changes to git, type
+   ```
+   git commit -a -m "clean"
+   ```
+12. Get latest from minimal, type
+   ```
+   git clone https://github.com/AdobeAEMXSC/minimal.git
+   ```
+14. Copy latest from minimal
+      * If MacOS, type
+         ```
+         cp -r minimal/* .
+         cp minimal/.gitignore .
+         cp minimal/.gitmodules .
+         ```
+      * If Windows, type
+         ```
+         xcopy /S /I /E minimal .
+         ```
+15. remove artifacts from minimal, type
+      ```
+      rm -rf minimal
+      ```
+17. Update submodules, type
+      ```
+      submodule update --remote
+      ```
+19. Commit all new files to git, type
+      ```
+      git add --all
+      ```
+21. Commit all changes to git, type
+      ```
+      git commit -am "updated minimal"
+      ```
+17.	push all commits back to New Repo, type
+      ```
+      git push
+      ```
 
 ### Add a New Submodule to Repo
 ```
@@ -41,9 +87,3 @@ git submodule add <git repository path>
 ```
 
 you also should add the new repository to the `<modules>` section in the root `pom.xml` file. 
-
-### Update Submodules to latest version
-
-```
-git submodule update --remote
-```
