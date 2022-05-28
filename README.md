@@ -33,23 +33,23 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
       ```
       cd aemcs-minimal
       ```
-6.	Remove all files and directories, type
+5.	Remove all files and directories, type
       ```
       git rm -rf .
       ```
-8. Clean all unstaged files, type
+6. Clean all unstaged files, type
    ```
    git clean -fxd
    ```
-10. Commit all changes to git, type
+7. Commit all changes to git, type
    ```
    git commit -a -m "clean"
    ```
-12. Get latest from minimal, type
+8. Get latest from minimal, type
    ```
    git clone https://github.com/AdobeAEMXSC/minimal.git
    ```
-14. Copy latest from minimal
+9. Copy latest from minimal
       * If MacOS, type
          ```
          cp -r minimal/* .
@@ -60,30 +60,30 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
          ```
          xcopy /S /I /E minimal .
          ```
-15. remove artifacts from minimal, type
+10. remove artifacts from minimal, type
       ```
       rm -rf minimal
       ```
-17. Update submodules, type
+11. Update submodules, type
       ```
       submodule update --remote
       ```
-19. Commit all new files to git, type
+12. Commit all new files to git, type
       ```
       git add --all
       ```
-21. Commit all changes to git, type
+13. Commit all changes to git, type
       ```
       git commit -am "updated minimal"
       ```
-17.	push all commits back to New Repo, type
+14. push all commits back to New Repo, type
       ```
       git push
       ```
 
 ### Add a New Submodule to Repo
-```
-git submodule add <git repository path>
-```
-
-you also should add the new repository to the `<modules>` section in the root `pom.xml` file. 
+1. Add submodule reference to `.submodules`, type
+      ```
+      git submodule add <git repository path>
+      ```
+2. Add the new repository to the `<modules>` section in the root `pom.xml` file to include it into maven build process
