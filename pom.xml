@@ -20,7 +20,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ez-aem-helper.cloud</groupId>
-    <artifactId>ez-aem-helper</artifactId>
+    <artifactId>adobe-aem-xsc</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <name>ez-aem-helper</name>
