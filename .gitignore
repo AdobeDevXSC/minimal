@@ -58,7 +58,7 @@ MANIFEST.MF
 hs_err_pid*
 
 # Mac OS #
-.DS_Store
+**/.DS_Store
 
 ### Maven ###
 target/
