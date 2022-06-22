@@ -67,7 +67,6 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
 11. add submodules, type
       ```
       git submodule add https://github.com/AdobeAEMXSC/aem-dispatcher.git
-      git submodule add https://github.com/AdobeAEMXSC/aem-workfront-connector.git
       ```
 12. Commit all new files to git, type
       ```
