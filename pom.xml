@@ -28,7 +28,6 @@
 
     <modules>
         <module>aem-dispatcher</module>
-        <module>aem-workfront-connector</module>
     </modules>
 
 
