@@ -24,7 +24,11 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
 
 1.	Click `Repositories` from Cloud Manager menu
 2.	Click `…` associated with `aemcs-minimal`, the click `Copy Repository URL`
-3.	Open `Terminal`, type
+3.	Open `Terminal` if using MacOS
+
+      Open `Command Prompt` if using Windows
+      
+      type
       ```
       git clone [repository URL]
       ```
