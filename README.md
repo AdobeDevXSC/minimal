@@ -17,10 +17,36 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
 1.	Click `Repositories` from Cloud Manager menu
 2.	Click `Add Repository` from Repositories screen
 3.	Enter `aemcs-minimal` as repository name, click `Save`
-4.	Click `…`, the click `Check Branches / Create Project`
-5.	Click `Create` using the default settings
 
-### Add Minimal Repo into New or Existing Repo
+### Add Minimal Repo to New Repo
+
+1.    Open `Terminal` if using MacOS
+
+      Open `Command Prompt` if using Windows
+      
+      type
+      ```
+      git clone https://github.com/AdobeAEMXSC/minimal.git
+      ```
+2.	Switch folder, type
+      ```
+      cd aemcs-minimal
+      ```
+3.    Substitute `###YOUR-ADOBE-ORG-NAME###` with your Adobe org name.  `abc-xyz` is the Adobe org name in the following example
+      ```
+      https://experience.adobe.com/#/@abc-xyz/cloud-manager/repositories.html/program/1234
+      ```
+      add a new remote `adobe` to new repo created in AEM project in Cloud Manager
+      
+      ```
+      git remote add adobe https://git.cloudmanager.adobe.com/###YOUR-ADOBE-ORG-NAME###/AEMCS-minimal
+      ```
+4.    Push all the changes in remote `adobe` as the `main` branch in new repo created in AEM project in Cloud Manager
+      ```
+      git push adobe main:main
+      ```
+
+### Add Minimal Repo to Existing Repo
 
 1.	Click `Repositories` from Cloud Manager menu
 2.	Click `…` associated with `aemcs-minimal`, the click `Copy Repository URL`
