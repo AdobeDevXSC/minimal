@@ -30,7 +30,7 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
       ```
 2.	Switch folder, type
       ```
-      cd aemcs-minimal
+      cd minimal
       ```
 3.    Substitute `###YOUR-ADOBE-ORG-NAME###` with your Adobe org name.  `abc-xyz` is the Adobe org name in the following example
       ```
