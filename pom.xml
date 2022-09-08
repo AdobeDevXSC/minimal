@@ -28,6 +28,7 @@
 
     <modules>
         <module>aem-dispatcher</module>
+        <module>aem-guides-wknd</module>
     </modules>
 
 
