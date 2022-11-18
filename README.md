@@ -36,12 +36,12 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
       ```
       https://experience.adobe.com/#/@abc-xyz/cloud-manager/repositories.html/program/1234
       ```
-      add a new remote `adobe` to new repo created in AEM project in Cloud Manager
+      add a new remote `adobe` to new repo created in AEM project in Cloud Manager, type the following in `Terminal` or `Command Prompt`
       
       ```
       git remote add adobe https://git.cloudmanager.adobe.com/###YOUR-ADOBE-ORG-NAME###/aemcs-minimal
       ```
-4.    Push all the changes in remote `adobe` as the `main` branch in new repo created in AEM project in Cloud Manager
+4.    Push all the changes in remote `adobe` as the `main` branch in new repo created in AEM project in Cloud Manager, type the following in `Terminal` or `Command Prompt`
       ```
       git push adobe main:main
       ```
