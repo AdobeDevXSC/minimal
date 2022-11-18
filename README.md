@@ -32,7 +32,7 @@ Find the out of the box repos at https://github.com/AdobeAEMXSC
       ```
       cd minimal
       ```
-3.    Substitute `###YOUR-ADOBE-ORG-NAME###` with your Adobe org name.  `abc-xyz` is the Adobe org name in the following example
+3.    Substitute `###YOUR-ADOBE-ORG-NAME###` with your Adobe org name.  `abc-xyz` is the Adobe org name in the following Cloud Manager program URL example
       ```
       https://experience.adobe.com/#/@abc-xyz/cloud-manager/repositories.html/program/1234
       ```
