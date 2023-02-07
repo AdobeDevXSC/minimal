@@ -31,11 +31,7 @@
 		<module>ui.config</module>
 		<module>ui.content</module>
     	<module>dispatcher</module>
-    <!--
-
-		<module>it.tests</module>
-		<module>ui.tests</module>
-    -->
+		<module>dependencies</module>
 	</modules>
 	<properties>
 		<aem.host>localhost</aem.host>
@@ -216,23 +212,6 @@ Bundle-DocURL:
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-resources-plugin</artifactId>
 					<version>3.0.2</version>
-					<executions>
-						<execution>
-							<id>copy-resources</id>
-							<phase>validate</phase>
-							<goals>
-							<goal>copy-resources</goal>
-							</goals>
-							<configuration>
-							<outputDirectory>${basedir}/target</outputDirectory>
-							<resources>          
-								<resource>
-								<directory>${basedir}/dependencies</directory>
-								</resource>
-							</resources>              
-							</configuration>            
-						</execution>
-                	</executions>
 				</plugin>
 				<!-- Maven Compiler Plugin -->
 				<plugin>
