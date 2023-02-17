@@ -1,0 +1,6 @@
+#
+# Enabled farms will be symlinked here. Their names should match the pattern '*.farm'
+#
+
+# instead of a symlink to `../available_farms/default.farm`, this is a copy of `../available_farms/default.farm`
+# this is done to avoid developers working on windows commiting Linux incompatible symlink

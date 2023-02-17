@@ -1,0 +1,25 @@
+{
+  "supportscredentials":true,
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST"
+  ],
+  "alloworiginregexp":[
+    "https://.*",
+    "http://.*"
+  ],
+  "supportedheaders":[
+    "Origin",
+    "Accept",
+    "X-Requested-With",
+    "Content-Type",
+    "Access-Control-Request-Method",
+    "Access-Control-Request-Headers"
+  ],
+  "allowedpaths":[
+    "/graphql/execute.json/.*",
+    "/content/.*",
+    "/conf/.*"
+  ]
+}

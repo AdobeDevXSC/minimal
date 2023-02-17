@@ -16,10 +16,12 @@ local.properties
 
 # Eclipse Core
 .project
-MANIFEST.MF
 
 # External tool builders
 .externalToolBuilders/
+
+# Escape dummy_sdk bin folder
+!dispatcher.cloud/test/dummy_sdk/bin
 
 # Locally stored "Eclipse launch configurations"
 *.launch
@@ -57,8 +59,6 @@ MANIFEST.MF
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# Mac OS #
-**/.DS_Store
 
 ### Maven ###
 target/
@@ -71,20 +71,39 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 
+
 ### Vault ###
 .vlt
+
 
 ### IntelliJ ###
 .idea/
 *.iml
 
-### Visual Studio ###
-.vscode
-.history
 
-asset/META-INF/
-asset/jcr_root/
-asset/dispatcher/
-asset/all/
-asset/.cloudmanager/
-aem-workfront-connector/
+### Node.js ###
+
+# Log files
+*.log
+
+# NPM
+node_modules/
+yarn.lock
+
+# Webpack
+build/
+dist/
+actions/common/
+
+# Frontend Maven Plugin
+node/
+
+# Tests
+coverage/
+reports/
+
+# Others
+dispatcher/src/conf.d/variables/default.vars
+ui.tests/test-module/assets/form/themes/**/*diff.png
+ui.tests/test-module/assets/form/themes/**/*current.png
+.DS_Store

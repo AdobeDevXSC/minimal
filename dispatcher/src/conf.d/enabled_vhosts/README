@@ -1,0 +1,6 @@
+#
+# Enabled virtual hosts will be symlinked here. Their names should match the pattern '*.vhost'
+#
+
+# instead of a symlink to `../available_vhosts/default.vhost`, this is a copy of `../available_vhosts/default.vhost`
+# this is done to avoid developers working on windows commiting Linux incompatible symlink
