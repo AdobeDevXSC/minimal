@@ -4,6 +4,22 @@ Starter Repo for Adobe Experience Manager as a Cloud Service
 Start you Adobe Experience Manager cloud projects with a default repository and directly include maintained versions
 of some additional handy features.
 
+## Obtain Repo Credential to AEM Program in Cloud Manager
+
+1.	Click `Repositories` from Cloud Manager menu
+
+      ![navigate to repository](_images/navigate-to-repository.png)
+
+2.    Click `Access Repo Info`
+
+      ![Access Repo Info](_images/access-repo-info.png)
+
+3.    `Username` and `Password` are prompted and used for repository changes
+
+      ![Git credentials](_images/git-credentials.png)
+
+      :warning: NOTE: Generated access password will only display in plain text view at initial generation.  Please copy it down elsewhere for later use.
+
 ## Add a New Repo to AEM Program in Cloud Manager
 
 1.	Click `Repositories` from Cloud Manager menu
@@ -52,17 +68,7 @@ of some additional handy features.
       git push adobe main:main
       ```
 
-5.    If prompted for git credential, the information can be obtained by
-
-      Clicking `Access Repo Info`
-
-      ![Access Repo Info](_images/access-repo-info.png)
-
-      `Username` and `Password` are available in this repository dialog
-
-      ![Git credentials](_images/git-credentials.png)
-
-      :warning: NOTE: Generated access password will only display in plain text view at initial generation.  Please copy it down elsewhere for later use.
+5.    credentials, if prompted, can be obtained by following instructions from [Repo Credential to AEM Program in Cloud Manager section](#Obtain-Repo-Credential-to-AEM-Program-in-Cloud-Manager)
 
 ## Update Existing Repo with Content from Minimal
 
