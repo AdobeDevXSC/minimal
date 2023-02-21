@@ -52,6 +52,18 @@ of some additional handy features.
       git push adobe main:main
       ```
 
+5.    If prompted for git credential, the information can be obtained by
+
+      Clicking `Access Repo Info`
+
+      ![Access Repo Info](_images/access-repo-info.png)
+
+      `Username` and `Password` are available in this repository dialog
+
+      ![Git credentials](_images/git-credentials.png)
+
+      :warning: NOTE: Generated access password will only display in plain text view at initial generation.  Please copy it down elsewhere for later use.
+
 ## Update Existing Repo with Content from Minimal
 
 1.	Click `Repositories` from Cloud Manager menu
