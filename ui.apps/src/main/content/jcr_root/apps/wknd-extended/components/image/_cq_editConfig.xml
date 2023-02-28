@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="cq:EditConfig">
+    <cq:dropTargets jcr:primaryType="nt:unstructured">
+        <image
+            jcr:primaryType="cq:DropTargetConfig"
+            accept="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml,video/mp4]"
+            groups="[media]"
+            propertyName="./fileReference">
+            <parameters
+                jcr:primaryType="nt:unstructured"
+                dmPresetType="\0"
+                imageCrop="\0"
+                imageFromPageImage="false"
+                imageMap="\0"
+                imageRotate="\0"
+                smartCropRendition="\0"/>
+        </image>
+    </cq:dropTargets>
+</jcr:root>
