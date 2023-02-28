@@ -18,7 +18,7 @@
                     <image
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Asset"
-                        sling:resourceType="core/wcm/components/include/imagedelegate"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
                         path="/apps/wknd-extended/components/image/cq:dialog/content/items/tabs/items/asset"/>
                 </items>
             </tabs>
