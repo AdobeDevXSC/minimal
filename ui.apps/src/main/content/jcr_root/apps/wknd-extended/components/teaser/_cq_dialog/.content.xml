@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Teaser"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[core.wcm.components.teaser.v2.editor,core.wcm.components.image.v3.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_teaser_v2"
+    trackingFeature="core-components:teaser:v2">
+    <content
+        granite:class="cmp-teaser__editor cmp-image__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Asset"
+                        sling:resourceType="core/wcm/components/include/imagedelegate"
+                        path="/apps/wknd-extended/components/image/cq:dialog/content/items/tabs/items/asset"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
