@@ -56,6 +56,11 @@
                     <embeddeds>
                         <embedded>
                             <groupId>cloud.adobe-aem-xsc</groupId>
+                            <artifactId>minimal.core</artifactId>
+                            <target>/apps/minimal-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>cloud.adobe-aem-xsc</groupId>
                             <artifactId>minimal.ui.apps</artifactId>
                             <type>zip</type>
                             <target>/apps/minimal-packages/application/install</target>
@@ -173,6 +178,11 @@
     <!-- D E P E N D E N C I E S                                                -->
     <!-- ====================================================================== -->
     <dependencies>
+        <dependency>
+            <groupId>cloud.adobe-aem-xsc</groupId>
+            <artifactId>minimal.core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>cloud.adobe-aem-xsc</groupId>
             <artifactId>minimal.ui.apps</artifactId>
