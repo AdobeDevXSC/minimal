@@ -1,0 +1,9 @@
+<hr class="cmp-separator__horizontal-rule">
+<div><strong>API URL:</strong></div>
+<input type="text" value="${properties.jcr:apiurl}" readonly style="width: 100%;" />
+<div><strong>Result:</strong></div>
+<sly data-sly-use.apiresult ="${'js/embed-server-side.js' @apiurl=properties.jcr:apiurl}" />
+<textarea style="width: 100%; height: 200px">
+${apiresult}
+</textarea>
+<hr class="cmp-separator__horizontal-rule">
