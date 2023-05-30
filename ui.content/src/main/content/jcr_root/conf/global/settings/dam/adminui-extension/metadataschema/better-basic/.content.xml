@@ -646,7 +646,7 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/gui/components/admin/schemafield"
                                     emptyText="Select Option"
-                                    fieldLabel="DRM liscensed?"
+                                    fieldLabel="DRM licensed?"
                                     name="./jcr:content/metadata/xmpRights:WebStatement"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
@@ -676,7 +676,7 @@
                                     emptyText="Select Option"
                                     fieldLabel="Review Status"
                                     name="./jcr:content/metadata/dam:status"
-                                    readOnly="{Boolean}true"
+                                    readOnly="{Boolean}false"
                                     resourceType="dam/gui/coral/components/admin/schemaforms/formbuilder/formfields/v2/metadataselect">
                                     <granite:data
                                         jcr:primaryType="nt:unstructured"
