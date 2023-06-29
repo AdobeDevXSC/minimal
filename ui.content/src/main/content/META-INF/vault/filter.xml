@@ -2,4 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/minimal" mode="merge"/>
     <filter root="/conf/global" mode="merge"/>
+    <filter root="/conf/global/settings/workflow/models/minimal-approval-workflow"/>
 </workspaceFilter>
