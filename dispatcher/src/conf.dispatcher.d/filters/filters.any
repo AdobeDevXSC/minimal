@@ -13,4 +13,12 @@ $include "./default_filters.any"
 /0102 { /type "allow" /extension "webmanifest" /path "/content/*/manifest" }
 
 # Additional rule to deal with upper case extensions
-/1003 { /type "allow" /extension '(CSS|EOT|GIF|ICO|JPEG|JPG|JS|GIF|PDF|PNG|SVG|SWF|TTG|WOFF|WOFF2|HTML|MP4|MOB|M4V|DOCX|docx|xlsx|XLSX|pptx|PPTX)' /path "/content/*" }  # disable this rule to allow mapped content only
+/1003 { /type "allow" /extension '(HTML|html|CSS|EOT|GIF|ICO|JPEG|JPG|JS|GIF|PDF|PNG|SVG|SWF|TTG|WOFF|WOFF2|HTML|MP4|MOB|M4V|DOCX|docx|xlsx|XLSX|pptx|PPTX)' /path "/content/*" }  # disable this rule to allow mapped content only
+
+# Allow GraphQL global endpoint & preflight requests
+# GraphQL also supports GET requests, if you intend to use GET include it in the rule below
+/1000 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/content/cq:graphql/global/endpoint.json" /extension "json"}
+
+# GraphQL Persisted Queries
+/1010 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json/*" }
+/1011 { /type "allow" /url "/graphql/execute.json/*" }
