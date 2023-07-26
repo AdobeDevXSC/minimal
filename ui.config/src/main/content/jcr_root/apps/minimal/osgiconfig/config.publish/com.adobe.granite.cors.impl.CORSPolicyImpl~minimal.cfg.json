@@ -1,5 +1,5 @@
 {
-  "supportscredentials":true,
+  "supportscredentials":false,
   "supportedmethods":[
     "GET",
     "HEAD",
