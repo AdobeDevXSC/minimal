@@ -6,8 +6,9 @@
     "POST"
   ],
   "alloworiginregexp":[
-    "https://.*",
-    "http://.*"
+    "https://.*.csb.app",
+    "https://cdpn.io/.*",
+    "https://www.your-domain.com/.*"
   ],
   "supportedheaders":[
     "Origin",
