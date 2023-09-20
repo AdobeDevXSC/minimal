@@ -8,8 +8,12 @@
   "alloworiginregexp":[
     "https://.*.csb.app",
     "https://cdpn.io/.*",
+    "https://.*\\.hlx\\.page",
+    "https://.*\\.hlx\\.live",
+    "https://localhost:.*",
     "https://www.your-domain.com/.*"
   ],
+  "maxage": 1800,
   "supportedheaders":[
     "Origin",
     "Accept",
