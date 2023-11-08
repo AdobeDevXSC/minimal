@@ -26,6 +26,7 @@
 	<description>minimal</description>
 	<modules>
 		<module>all</module>
+		<module>core</module>
 		<module>ui.apps</module>
     	<module>ui.apps.structure</module>
 		<module>ui.config</module>
@@ -165,8 +166,7 @@
 								<goal>bnd-process</goal>
 							</goals>
 							<configuration>
-								<bnd>
-									<![CDATA[
+								<bnd><![CDATA[
 Bundle-Category: ${componentGroupName}
 
 # export all versioned packages except for conditional ones (https://github.com/bndtools/bnd/issues/3721#issuecomment-579026778)
@@ -179,8 +179,7 @@ Bundle-Category: ${componentGroupName}
 Bundle-DocURL:
 -plugin org.apache.sling.caconfig.bndplugin.ConfigurationClassScannerPlugin
 -plugin org.apache.sling.bnd.models.ModelsScannerPlugin
-                                ]]>
-								</bnd>
+                                ]]></bnd>
 							</configuration>
 						</execution>
 					</executions>

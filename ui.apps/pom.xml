@@ -108,6 +108,11 @@
     <dependencies>
         <dependency>
             <groupId>cloud.adobe-aem-xsc</groupId>
+            <artifactId>minimal.core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cloud.adobe-aem-xsc</groupId>
             <artifactId>minimal.ui.apps.structure</artifactId>
             <version>${project.version}</version>
             <type>zip</type>
