@@ -1,0 +1,8 @@
+{
+    "sling.serverinfo": "Apache Sling",
+    "sling.max.calls:Integer": "1500",
+    "sling.additional.response.headers": [
+        "X-Content-Type-Options=nosniff",
+        "Content-Security-Policy=frame-ancestors 'self' https://*.adobe.com https://*.adobe.net"
+    ]
+}
