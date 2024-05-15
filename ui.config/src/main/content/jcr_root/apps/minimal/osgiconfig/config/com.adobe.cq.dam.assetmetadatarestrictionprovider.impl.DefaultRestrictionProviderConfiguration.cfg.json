@@ -1,0 +1,6 @@
+{
+    "restrictionPropertyNames":[
+      "cq:tags"
+    ],
+    "enabled":true
+  }
