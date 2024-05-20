@@ -7,6 +7,8 @@
 
 Include conf.d/rewrites/default_rewrite.rules
 
+Header set Content-Security-Policy "frame-ancestors 'self'. https://*.adobescreens.com file: http://localhost:*;"
+
 # rewrite for root redirect
 RewriteRule ^/?$ /content/${CONTENT_FOLDER_NAME}/us/en.html [PT,L]
 
