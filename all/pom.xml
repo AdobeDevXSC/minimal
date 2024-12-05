@@ -51,6 +51,11 @@
                 <configuration>
                     <group>cloud.adobe-aem-xsc</group>
                     <packageType>container</packageType>
+                    <filters>
+                        <filter>
+                            <root>/apps/aem-core-email-components-packages</root>
+                        </filter>
+                    </filters>
                     <!-- skip sub package validation for now as some vendor packages like CIF apps will not pass -->
                     <skipSubPackageValidation>true</skipSubPackageValidation>
                     <embeddeds>
@@ -71,6 +76,16 @@
                             <artifactId>minimal.ui.config</artifactId>
                             <type>zip</type>
                             <target>/apps/minimal-packages/application/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.email.components.all</artifactId>
+                            <target>/apps/aem-core-email-components-packages/container/install</target>
+                        </embedded>
+                        <embedded>
+                            <groupId>com.adobe.cq</groupId>
+                            <artifactId>core.email.components.examples.all</artifactId>
+                            <target>/apps/aem-core-email-components-packages/container/install</target>
                         </embedded>
                     </embeddeds>
                 </configuration>
@@ -191,6 +206,17 @@
             <version>${project.version}</version>
             <type>zip</type>
         </dependency>
-
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.email.components.all</artifactId>
+            <version>1.2.2</version>
+            <type>zip</type>
+        </dependency>
+        <dependency>
+            <groupId>com.adobe.cq</groupId>
+            <artifactId>core.email.components.examples.all</artifactId>
+            <version>1.2.2</version>
+            <type>zip</type>
+        </dependency>
     </dependencies>
 </project>
