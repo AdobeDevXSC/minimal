@@ -10,6 +10,8 @@
     "https://cdpn\\.io",
     "https://.*\\.hlx\\.page",
     "https://.*\\.hlx\\.live",
+    "https://.*\\.aem\\.page",
+    "https://.*\\.aem\\.live",
     "https://localhost:.*",
     "https://www\\.your-domain\\.com/.*"
   ],
