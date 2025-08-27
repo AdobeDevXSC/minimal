@@ -10,10 +10,10 @@
     "https://cdpn\\.io",
     "https://.*\\.hlx\\.page",
     "https://.*\\.hlx\\.live",
-    "https://.*\\.aem\\.page",
-    "https://.*\\.aem\\.live",
+    "https://.*\\.github\\.io",
     "https://localhost:.*",
-    "https://www\\.your-domain\\.com"
+    "http://localhost:.*",
+    "https://www\\.your-domain\\.com/.*"
   ],
   "maxage": 1800,
   "supportedheaders":[
@@ -22,11 +22,13 @@
     "X-Requested-With",
     "Content-Type",
     "Access-Control-Request-Method",
-    "Access-Control-Request-Headers"
+    "Access-Control-Request-Headers",
+    "Authorization"
   ],
   "allowedpaths":[
     "/graphql/execute.json/.*",
     "/content/.*",
-    "/conf/.*"
+    "/conf/.*",
+    "/api/assets/.*"
   ]
 }

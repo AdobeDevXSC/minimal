@@ -10,9 +10,9 @@
     "https://cdpn\\.io",
     "https://.*\\.hlx\\.page",
     "https://.*\\.hlx\\.live",
-    "https://.*\\.aem\\.page",
-    "https://.*\\.aem\\.live",
+    "https://.*\\.github\\.io",
     "https://localhost:.*",
+    "http://localhost:.*",
     "https://www\\.your-domain\\.com/.*"
   ],
   "maxage": 1800,
@@ -28,6 +28,7 @@
   "allowedpaths":[
     "/graphql/execute.json/.*",
     "/content/.*",
-    "/conf/.*"
+    "/conf/.*",
+    "/api/assets/.*"
   ]
 }
